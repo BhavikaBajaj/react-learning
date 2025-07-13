@@ -12,7 +12,9 @@ function App() {
       <div>Healthy Foods</div>
       <ul className="list-group">
         {foodItems.map((item) => (
-          <li className="list-group-item">{item}</li>
+          <li key={item} className="list-group-item">
+            {item}
+          </li>
         ))}
       </ul>
     </>
