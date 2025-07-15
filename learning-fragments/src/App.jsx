@@ -1,19 +1,22 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import FoodItems from "./components/FoodItems";
 import ErrorMessage from "./components/ErrorMessage";
+import Container from "./components/Container";
 
 function App() {
   // let foodItems = [];
   let foodItems = ["Dal", "Green Vegetables", "Roti", "Salad", "Milk"];
   return (
     <>
-      <h1 className="food-heading">Healthy Food</h1>
-      <ErrorMessage items={foodItems}></ErrorMessage>
-      <FoodItems items={foodItems}></FoodItems>
+      <Container>
+        <h1 className="food-heading">Healthy Food</h1>
+        <ErrorMessage items={foodItems}></ErrorMessage>
+        <FoodItems items={foodItems}></FoodItems>
+      </Container>
+      <Container>
+        <p>Above is the list of healthy foods for well being.</p>
+      </Container>
     </>
   );
 }

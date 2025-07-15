@@ -1,8 +1,8 @@
 .item {
-  background-color: khaki !important;
+  /* background-color: khaki; */
 }
 
 .item-span {
-  font-weight: 500 !important;
-  color: orangered !important;
+  font-weight: 500;
+  color: orangered;
 }
