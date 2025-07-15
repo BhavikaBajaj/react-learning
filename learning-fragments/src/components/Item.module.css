@@ -1,8 +1,13 @@
 .item {
-  /* background-color: khaki; */
+  background-color: white;
 }
 
 .item-span {
   font-weight: 500;
   color: orangered;
+}
+
+.button {
+  float: right;
+  cursor: pointer;
 }
